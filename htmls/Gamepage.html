@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>PhotoFolio Bootstrap Template - Gallery Single</title>
+<head>Game Page</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,6 +108,7 @@
                 <li><strong id="k0"></strong> <span id="kv0"></span></li>
                 <li><strong id="k1"></strong> <span id="kv1"></span></li>
                 <li><strong id="k2"></strong> <span id="kv2"></span></li>
+                <li><strong id="k3"></strong> <span id="kv3"></span></li>
                 <!--<li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
                 <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>-->
                 <li><a class="btn-visit align-self-start" href="./payment.html">Download</a>                </li>
@@ -188,35 +181,34 @@ const games_btn_config={
 const Asassin={
     "OS":"Windows 7"
     ,"Processor":"1.8 GHz Intel Core2 Duo or 2.4 GHz AMD Athlon 64 X2 or better. Video: 256 MB DirectX 9.0c–compliant card with Shader Model 3.0 or better.",
-    "Ram":"2 GB"
+    "Price":"₹399"
 }
 const cyber={
     "OS":"Windows 10"
-,"Graphics":"NVIDIA GeForce GTX 970 or AMD Radeon RX 470.","Ram":"8 GB"
+,"Storage":"70 GB","Price":"₹2649"
 }
 
 const Village={
     "Graphics":"AMD Radeon RX 560 with 4GB VRAM ／ NVIDIA GeForce GTX 1050 Ti with 4GB VRAM."
-    ,"Memory":"8 GB RAM.","Processor":"AMD Ryzen 3 1200 ／ Intel Core i5-7500."
+    ,"Price":"₹1999","Processor":"AMD Ryzen 3 1200 ／ Intel Core i5-7500.",
 }
 
 const syndicate={
 "Video Card":"NVIDIA GeForce GTX 760 (4GB) or the newer GTX 970 (4GB) or AMD Radeon R9 280X (3GB) or better.",
 "Processor":"Intel Core i7-3770 @ 3.5 GHz or AMD FX-8350 @ 4.0 GHz."
-,"OS":"Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions only)"
+,"OS":"Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions only)",
 }
 
 const Witcher={
     "Graphics":" Nvidia GPU GeForce GTX 770 or AMD GPU Radeon R9 290.",
     "Processor":" Intel CPU Core i7 3770 3,4 GHz, AMD CPU AMD FX-8350 4 GHz."
-    ,"Disk space":"40 GB."
+    ,"Price":"₹2399",
 }
 
 const gta={
     "VIDEO CARD": "512MB NVIDIA 8600 / 512MB ATI 3870.",
-    "Processor ":"Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz.",
-    "Ram":"2 GB"
-
+    "Processor ":"Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz."
+    ,"Price":"₹2499"
 }
 
 const gInfo={"GTA":gta,"The Witcher":Witcher,"Asassin":Asassin,
@@ -288,7 +280,9 @@ function setInformation(Data){
             }
            }
     } catch (error) {
-        
+        console.warn("Something went wrong...");
+        console.warn(error);
+        console.log("-------------");
     }
 
  
