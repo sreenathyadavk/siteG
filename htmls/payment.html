@@ -1555,7 +1555,7 @@ function set_imgData() {
     parentFolder = parentFolder+games_btn_config[Data[0]]+"/"
     console.log("parentFolder changed to " + parentFolder);
     for (let index =0; index <= 4; index++) {
-        document.getElementById(imgslideData[index]).src=parentFolder+(index)+".JPG";
+        document.getElementById(imgslideData[index]).src=parentFolder+(index)+".jpg";// just for 'idk' not neccessary
         document.getElementById(imgslideData[index]).alt=parentFolder+Data[0]+".JPG";
     }
 }
